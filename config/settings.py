@@ -137,7 +137,6 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_BACKEND = env.str("EMAIL_BACKEND", default='django.core.mail.backends.console.EmailBackend')
 DEFAULT_FROM_EMAIL = env.str('DEFAULT_FROM_EMAIL')
 EMAIL_HOST = env.str('EMAIL_HOST')
@@ -145,11 +144,3 @@ EMAIL_HOST_USER = env.str('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = env.int('EMAIL_PORT')
 EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS')
-
-
-# DEFAULT_FROM_EMAIL = 'kcruzroyalty@gmail.com'
-# EMAIL_HOST = 'smtp.sendgrid.net'
-# EMAIL_HOST_USER = 'apikey'
-# EMAIL_HOST_PASSWORD = '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'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
