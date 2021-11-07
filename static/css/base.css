@@ -1,0 +1,17 @@
+body {
+    font-family: 'Newsreader', serif;
+}
+
+.list_links{
+    text-decoration: none;
+}
+
+.article-in-list-image {
+    width:20%;
+}
+
+.detail-img {
+    width: 60%;
+    display: flex;
+    align-self: center;
+}

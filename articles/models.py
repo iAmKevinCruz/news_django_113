@@ -12,6 +12,7 @@ class Article(models.Model):
         get_user_model(),
         on_delete=models.CASCADE
     )
+    picture = models.CharField(max_length=512, default=None, null=True)
 
     def __str__(self):
         return self.title
